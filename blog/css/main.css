@@ -1,0 +1,50 @@
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+#header .nav-list{
+    padding:44px 136px 32px;
+}
+#header .nav-list .logo{
+    display: inline-block;
+}
+#header .nav-list h1{
+    margin:0;
+    color:#000;
+    font-weight:700;
+    font-size:24px;
+    line-height:24px;
+    width:936px;
+}
+#header .nav-list .search{
+    color:#25a186;
+    font-weight:600;
+    font-size:14px;
+    line-height:24px;
+    display: inline-block;
+}
+#header .nav-list .list{
+    width:24px;
+    height:24px;
+    margin-left:8px;
+    line-height:24px;
+    display:inline-block;
+}
+#header .nav-list .list .menu-icon{
+    display: inline-block;
+    width: 20px;
+	height: 2px;
+	border-top: 2px solid #25a186;
+	border-bottom: 2px solid #25a186;
+	background-color: #25a186;
+	padding: 3px 0;
+    background-clip:content-box;
+    box-sizing: unset;
+}
+#footer{
+    padding:50px 0;
+    font-size:14px;
+    color:#25a186;
+    font-weight:bold;
+    text-align: center;
+}

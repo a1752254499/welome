@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#fff;
+    color:#292929;
+    font-size:20px;
+    font-weight:400;
+}
+ul,li{
+    list-style:none;
+}
+a,a:hover{
+    text-decoration:none;
+}
+.container{
+    width:1280px;
+    margin: 0 auto;
+}
+#main .content .title{
+    background-color:#25a186;
+    padding:124px 290px 86px 140px;
+    width:100%;
+    
+}
+#main .content .title h3{
+    color:#fff;
+    font-weight:600;
+    font-size:48px;
+    line-height:1.4;
+}
+#main .content .time{
+    padding-left:140px;
+    margin-bottom:12px;
+    color:rgba(0, 0, 0, .54);
+    font-weight:600;
+    font-size:16px;
+    height:84px;
+    line-height:84px;
+}
+#main .content .article{
+    padding-right:290px;
+    position: relative;
+    margin-left:140px;
+    margin-top:20px;
+    margin-bottom:32px;
+}
+#main .content .article .new{
+    margin-right:110px;
+}
+#main .content .article .new .img{
+    width:40%;
+    height:40%;
+    margin:0 auto;
+}
+#main .content .article .new .img img{
+    width:100%;
+}
+#main .content .share{
+    margin-left:140px;
+    margin-right:400px;
+    text-align: right;
+}
+.m-item{
+    display: inline-block;
+    font-weight:600;
+    font-size:14px;
+    color:#25a186;
+    background:none;
+    border:0;
+    border-radius:2px;
+    cursor: pointer;
+    padding:8px;
+    margin:-8px;
+    outline: none;
+}
+.m-item:hover{
+    background: rgba(37, 161, 134, .12);
+}
+#main .content .comment{
+    margin-left:140px;
+    margin-right:400px;
+}
+#main .content .comment h3{
+    color:rgba(0, 0, 0, .54);
+    font-weight:600;
+    font-size:16px;
+    margin-bottom:48px;
+}
+#main .content .comment .text{
+    position: relative;
+    border-top:1px dashed #e7e7e7;
+    border-bottom:1px dashed #e7e7e7;
+    width:100%;
+    padding-left:64px;
+    text-align: right;
+}
+#main .content .comment .text .userlogo{
+    width:40px;
+    height:40px;
+    background:#000;
+    border-radius:50%;
+    position: absolute;
+    top:10px;
+    left:5px;
+}
+#main .content .comment .text textarea{
+    width:100%;
+    border:0;
+    padding-top:20px;
+    font-size:16px;
+    outline: none;
+}
+#main .content .comment .text button{
+    position: absolute;
+    right:0;
+    bottom:-28px;
+}
+#main .content .comment .param .p-item{
+    padding-left:64px;
+    position: relative;
+    margin-bottom:15px;
+}
+#main .content .comment .param .p-item .logo{
+    width:40px;
+    height:40px;
+    background:#000;
+    border-radius:50%;
+    position: absolute;
+    top:5px;
+    left:5px;
+}
+#main .content .comment .param .p-item .top{
+    line-height:25px;
+}
+#main .content .comment .param .p-item .top .name{
+    color:#292929;
+    font-weight:600;
+    font-size:14px;
+}
+#main .content .comment .param .p-item .top .fb-time::before{
+    content: "·";
+
+}
+#main .content .comment .param .p-item .top .fb-time{
+    color: rgba(0, 0, 0, .54);
+    font-weight:600;
+    font-size:14px;
+}
+#main .content .comment .param .p-item .mito{
+    margin-top:6px;
+    margin-bottom:16px;
+    color:#292929;
+    font-size:16px;
+}
+#main .content .comment .param .p-item .bottom .reply{
+    color:#25a186;
+    font-weight:bold;
+    font-size:16px;
+    margin-right:8px;
+}
+#main .content .comment .param .p-item .bottom .delete{
+    color:#25a186;
+    font-weight:bold;
+    font-size:16px;
+}
