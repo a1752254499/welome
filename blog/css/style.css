@@ -1,9 +1,4 @@
-*{
-    margin:0;
-    padding:0;
-}
 body{
-    background-color:#fff;
     color:#292929;
     font-size:20px;
     font-weight:400;
@@ -73,6 +68,12 @@ a,a:hover{
     margin-left:20px;
     margin-right:520px;
 }
+#main .m-top .bg-img-top{
+    display:none;
+    background-image:url("http://47.100.53.137:10086/uploads/70b2f2eb0f11bcb115a194cc6855c970");
+    background-position:center;
+    background-size:cover;
+}
 #main .m-top .bg-img{
     background-image:url("http://47.100.53.137:10086/uploads/70b2f2eb0f11bcb115a194cc6855c970");
     background-position:center;
@@ -129,11 +130,88 @@ a,a:hover{
 }
 #main .m-widget .articles .a-item .m-item:hover{
     background: rgba(37, 161, 134, .12);
-
+}
+#main .m-widget .articles .a-item .bg-img-top{
+    display:none;
+    width:100%;
+    height:100%;
+    background-image:url("http://47.100.53.137:10086/uploads/70b2f2eb0f11bcb115a194cc6855c970");
+    background-position:center;
+    background-size:cover;
 }
 #main .m-widget .articles .a-item .bg-img{
     width:22%;
     background-image:url("http://47.100.53.137:10086/uploads/70b2f2eb0f11bcb115a194cc6855c970");
     background-position:center;
     background-size:cover;
+}
+@media screen and (max-width: 768px){
+    #main .m-top{
+        flex-wrap: wrap;
+    }
+    #main .m-top .bg-img-top{
+        width:100%;
+        height:calc(100vw * 2 / 3);
+        display: block;
+        margin:0 auto;
+    }
+    #main .m-top .bg-img{
+        display: none;
+    }
+    #main .m-top .post{
+        width:100%;
+        padding:24px;
+    }
+    #main .m-top .post .title{
+        font-size:24px;
+    }
+    #main .m-top .post .content{
+        font-size:16px;
+        line-height:2;
+    }
+    #main .m-top .post .ripple,
+    #main .m-widget .articles .a-item .ripple{
+        margin-left:10px;
+        margin-right:0;
+    }
+    #main .m-top .post .full,
+    #main .m-widget .articles .a-item .full{
+        float: right;
+    }
+    #main .m-widget{
+        padding:0;
+    }
+    #main .m-widget .heading{
+        margin-left:24px;
+        margin-right:24px;
+    }
+    #main .m-widget .articles{
+        margin-left:24px;
+        margin-right:24px;
+    }
+    #main .m-widget .articles .a-item{
+        flex-wrap:wrap;
+    }
+    #main .m-widget .articles .a-item .a-left{
+        margin-right:0;
+        width:100%;
+    }
+    #main .m-widget .articles .a-item .bg-img-top{
+        display: block;
+        height:calc(100vw * 2 / 3);
+        margin-bottom:16px;
+    }
+    #main .m-widget .articles .a-item .bg-img{
+        display: none;
+    }
+    #main .m-widget .articles .a-item h3 a{
+        font-size:24px;
+    }
+    #main .m-widget .articles .a-item .time a{
+        font-size:14px;
+    }
+    #main .m-widget .articles .a-item .content{
+        line-height:2;
+        font-size:16px;
+    }
 }

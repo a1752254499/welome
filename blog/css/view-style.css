@@ -1,10 +1,7 @@
 *{
-    margin:0;
-    padding:0;
     box-sizing:border-box;
 }
 body{
-    background-color:#fff;
     color:#292929;
     font-size:20px;
     font-weight:400;
@@ -15,9 +12,9 @@ ul,li{
 a,a:hover{
     text-decoration:none;
 }
-.container{
+.v-container{
     width:1280px;
-    margin: 0 auto;
+    margin:0 auto;
 }
 #main .content .title{
     background-color:#25a186;
@@ -165,4 +162,29 @@ a,a:hover{
     color:#25a186;
     font-weight:bold;
     font-size:16px;
+}
+@media screen and (max-width: 768px){
+    .v-container{
+        width:100%;
+    }
+    #main .content .title{
+        padding:62px 24px 24px 24px;
+    }
+    #main .content .title h3{
+        font-size:24px;
+    }
+    #main .content .time{
+        padding-left:24px;
+        font-size:14px;
+    }
+    #main .content .article,
+    #main .content .share,
+    #main .content .comment{
+        margin:32px 24px ;
+        padding:0;
+    }
+    #main .content .article .new{
+        margin-right:0;
+        font-size:16px;
+    }
 }
