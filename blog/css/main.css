@@ -1,3 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul,li{
+    list-style:none;
+}
+a,a:hover{
+    text-decoration:none;
+    color:#fff;
+}
+body{
+    background-color:#fff;
+    color:#292929;
+    font-size:20px;
+    font-weight:400;
+}
 .container{
     width: 1280px;
     margin: 0 auto;
@@ -10,11 +27,13 @@
 }
 #header .nav-list h1{
     margin:0;
-    color:#000;
     font-weight:700;
     font-size:24px;
     line-height:24px;
-    width:936px;
+    width:838px;
+}
+#header .nav-list h1 a{
+    color:#000;
 }
 #header .nav-list .search{
     color:#25a186;
@@ -22,6 +41,14 @@
     font-size:14px;
     line-height:24px;
     display: inline-block;
+}
+#header .nav-list .search input{
+    border-radius:20px;
+    border:2px solid #25a186;
+    padding-left:10px;
+    box-shadow: none;
+    outline: none;
+    width:80px;
 }
 #header .nav-list .list{
     width:24px;
@@ -32,6 +59,7 @@
 }
 #header .nav-list .list .menu-icon{
     display: inline-block;
+    position: relative;
     width: 20px;
 	height: 2px;
 	border-top: 2px solid #25a186;
@@ -40,6 +68,25 @@
 	padding: 3px 0;
     background-clip:content-box;
     box-sizing: unset;
+}
+#header .nav-list .list .menu-icon .menu{
+    display: none;
+    position: absolute;
+    background:#25a186;
+    top:-2px;
+    left:0px;
+    width:130px;
+    text-align:center;
+}
+#header .nav-list .list .menu-icon:hover .menu{
+    display: block;
+}
+#header .nav-list .list .menu-icon .menu .m-item{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+#header .nav-list .list .menu-icon .menu .m-item a{
+    font-size:16px;
 }
 #footer{
     padding:50px 0;
