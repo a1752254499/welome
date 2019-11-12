@@ -61,7 +61,6 @@ body{
 }
 #header .nav-list .list .menu-icon{
     display: inline-block;
-    position: relative;
     width: 20px;
 	height: 2px;
 	border-top: 2px solid #25a186;
@@ -81,25 +80,33 @@ body{
     display:none;
 }
 #header .nav-list .list .menu{
+    top:0;
+    left:0;
     background:#fff;
     position: absolute;
     border-radius:3px;
     box-shadow:0px 0px 4px 0 #ececec;
-    right:40%;
     text-align:center;
+    width:100%;
+    margin:0 auto;
 }
 #header .nav-list .list .menu .menu-item{
     display: inline-block;
-    padding:2px 10px;
+    padding:2px 15px;
+}
+#header .nav-list .list .menu .menu-item:hover{
+    background:rgba(0,0,0,0.05);
 }
 #header .nav-list .list .menu .menu-item a{
     font-size:16px;
     color:#25a186;
 }
 #footer{
+    margin-top:100px;
+    background:#25a186;
     padding:50px 0;
     font-size:14px;
-    color:#25a186;
+    color:#fff;
     font-weight:bold;
     text-align: center;
 }
