@@ -1,7 +1,7 @@
-function $(el){
+function $(el) {
     return document.querySelector(el);
 }
-function $All(el){
+function $All(el) {
     return document.querySelectorAll(el);
 }
 var box = $(".b-mid");
@@ -12,59 +12,63 @@ var bmList = $All(".bm-list");
 var count = 0;
 var times = null;
 
-for(var i = 0; i < blItem.length; i++){
+for (var i = 0; i < blItem.length; i++) {
     blItem[i].onmouseover = bt;
     blItem[i].onmouseout = bn;
 }
 
-function bt(){
-    for(var i = 0;i < blItem.length;i++){
-        if(blItem[i] === this){
+function bt() {
+    for (var i = 0; i < blItem.length; i++) {
+        if (blItem[i] === this) {
             bmList[i].style.display = "block";
-        }else{
+        } else {
             bmList[i].style.display = "none";
         }
     }
 }
 
-function bn(){
-    for(var i = 0;i < blItem.length;i++){
-            bmList[i].style.display = "";
-
+function bn() {
+    for (var i = 0; i < blItem.length; i++) {
+        bmList[i].style.display = "none";
     }
 }
 
-for(var i = 0;i < btn.length; i++){
-    btn[i].onclick = function(){
-        for(var i = 0; i < btn.length; i++){
-            if(btn[i] === this){
-                banner[i].style.display = "block";
+for (var i = 0; i < btn.length; i++) {
+    btn[i].onclick = function () {
+        for (var i = 0; i < btn.length; i++) {
+            if (btn[i] === this) {
+                banner[i].style.opacity = "1";
+                banner[i].style.zIndex = "10";
                 btn[i].style.background = "#000";
-            }else{
-                banner[i].style.display = "none";
+                count = i;
+            } else {
+                banner[i].style.opacity = "0";
+                banner[i].style.zIndex = "-1";
                 btn[i].style.background = "#fff";
             }
         }
     }
 }
-function ban(){
+function ban() {
     count++;
-    if (count > banner.length - 1){
-      count = 0;
+    if (count > banner.length - 1) {
+        count = 0;
     }
-    for (var i = 0; i < banner.length; i++){
-      banner[i].style.display = "none";
-      btn[i].style.background = "#fff";
+    for (var i = 0; i < banner.length; i++) {
+        banner[i].style.opacity = "0";
+        banner[i].style.zIndex = "-1";
+        btn[i].style.background = "#fff";
     }
-    banner[count].style.display = "block";
+    banner[count].style.opacity = "1";
+    banner[count].style.zIndex = "10";
     btn[count].style.background = "#000";
-  }
+}
 
-times = setInterval(ban,3000);
+times = setInterval(ban, 1000);
 
-box.onmouseover = function(){
+$(".banner").onmouseover = function () {
     clearInterval(times);
 }
-box.onmouseout = function(){
-    times = setInterval(ban,3000);
+$(".banner").onmouseout = function () {
+    times = setInterval(ban, 1000);
 }

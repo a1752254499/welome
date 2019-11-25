@@ -176,12 +176,15 @@ ul,li{
     overflow: hidden;
 }
 .banner .b-right a:first-child{
-    display: block;
+    opacity: 1;
+    z-index:10;
 }
 .banner .b-right a{
-    display:none;
+    opacity: 0;
     position: absolute;
     height:460px;
+    transition:all 2s;
+    z-index:-1;
 }
 .banner .b-right a img{
     display: block;
