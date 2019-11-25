@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+.sep{
+    color: #424242;
+    margin: 0 3.6px;
+}
+.container{
+    width: 1226px;
+    margin: 0 auto;
+}
+.site-topbar{
+    background: #333;
+}
+.site-topbar .container{
+    display: flex;
+    height: 40px;
+}
+.site-topbar .bar-left{
+    width:77%;
+}
+.site-topbar .bar-left a,
+.site-topbar .bar-right a{
+    display: inline-block;
+    font-size: 12px;
+    color: #b0b0b0;
+    height: 40px;
+    line-height: 40px;
+}
+.site-topbar .bar-left a:hover,
+.site-topbar .bar-right a:hover{
+    color: #fff;
+}
+.site-topbar .bar-right{
+    width: 23%;
+}
+.site-topbar .bar-right a:last-child{
+    position: relative;
+    width: 120px;
+    background: #424242;
+    text-align: center;
+    margin-left: 19px;
+}
+.site-topbar .bar-right a:last-child span{
+    display:none;
+    position: absolute;
+    right: 0;
+    width: 160%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    padding:0 60px;
+    z-index: 100000;
+    color: #000;
+    background: #fff;
+    box-shadow:0 5px 7px 0 #ececec;
+}
+.site-topbar .bar-right a:last-child:hover{
+    color: #ff6700;
+    background:#fff;
+}
+.site-topbar .bar-right a:last-child:hover span{
+    display: block;
+}
+
+.site-header .container{
+    line-height: 100px;
+    height: 100px;
+    display: flex;
+}
+.site-header .h-left{
+    width: 20%;
+}
+.site-header .h-left .logo{
+    position: relative;
+    margin-top: 23px;
+    display: block;
+    width: 55px;
+    height: 55px;
+    background:#ff6700 url("../images/mi-logo.png") no-repeat 50% 50%;
+}
+.site-header .h-mid{
+    width: 55%;
+}
+.site-header .h-mid .hm-list .hm-item{
+    display: inline-block;
+}
+.site-header .h-mid .hm-list .hm-item a{
+    display: block;
+    margin: 0 10px;
+    color: #333;
+    font-size:16px;
+    transition: color .2s;
+}
+.site-header .h-mid .hm-list .hm-item a:hover{
+    color: #ff6700;
+}
+
+.site-header .h-right{
+    position: relative;
+    width: 25%;
+}
+.site-header .h-right input{
+    width:100%;
+    border: 0;
+    box-shadow: 0 0 0 1px #ececec;
+    height: 45px;
+    outline:medium;
+}
+.site-header .h-right .btn{
+    position: absolute;
+    right: 0;
+    top: 29px;
+    width: 21%;
+    background: #fff;
+    color: #000;
+    transition: all .2s;
+    cursor: pointer;
+}
+.site-header .h-right .btn:hover{
+    background: #ff6700;
+    color:#fff;
+}
+.banner .container{
+    position: relative;
+    display: flex;
+}
+.banner .b-left{
+    width: 20%;
+    height: 460px;
+    position: absolute;
+    z-index: 10000;
+}
+.banner .b-left .bl-list{
+    padding:20px 0;
+    background: rgba(105, 101, 101, .6);
+}
+.banner .b-left .bl-list .bl-item{
+    position: relative;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+}
+.banner .b-left .bl-list .bl-item::before{
+    content:">";
+    position: absolute;
+    right: 30px;
+    top:0;
+    color: #fff;
+    font-weight: 900;
+}
+.banner .b-left .bl-list .bl-item a{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    padding-left:30px;
+    background: transparent;
+    transition: all .2s;
+}
+.banner .b-left .bl-list .bl-item a:hover{
+    background: #ff6700;
+}
+.banner .b-right{
+    height:460px;
+    width: 100%;
+    position: absolute;
+    left:0;
+    z-index: 1;
+    overflow: hidden;
+}
+.banner .b-right a:first-child{
+    display: block;
+}
+.banner .b-right a{
+    display:none;
+    position: absolute;
+    height:460px;
+}
+.banner .b-right a img{
+    display: block;
+    width: 100%;
+}
+.banner .b-mid{
+    display: block;
+    width: 80%;
+    height: 460px;
+    left:20%;
+    position: absolute;
+    z-index: 3;
+}
+.banner .bm-list{
+    display: none;
+    box-sizing: border-box;
+    width:100%;
+    background: #fff;
+    height:460px;
+    padding:20px;
+    box-shadow: 0 0 6px 1px #ececec;
+}
+.banner .bm-list .bm-item{
+    display: inline-block;
+    width:24.6%;
+    height:40px;
+    padding-bottom: 30px;
+}
+.banner .bm-list .bm-item a{
+    color: #222;
+    text-align: right;
+    font-size: 14px;
+}
+.banner .bm-list .bm-item a:hover{
+    color: #ff6700;
+}
+.banner .bm-list .bm-item a img{
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    margin-right:15px;
+}
+.banner .b-btn{
+    position: absolute;
+    right:20px;
+    top:420px;
+    z-index: 4;
+}
+
+.banner .b-btn span{
+    display: inline-block;
+    margin:0 3px;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow:0 0 1px 3px #999;
+    cursor: pointer;
+}
+.banner .b-btn span:first-child{
+    background: #000;
+}
+
+
+.sec{
+    margin-top:475px;
+}
+.sec .container{
+    display: flex;
+}
+.sec .s-left{
+    width:20%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #5f5750;
+}
+.sec .s-left .sl-item{
+    flex: 1 26%;
+    font-size: 12px;
+    line-height: 83px;
+    text-align: center;
+    color: #fff;
+    opacity: .7;
+    box-shadow: 0 0 1px 0 #ececec;
+    transition: all .2s;
+}
+.sec .s-left .sl-item:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.sec .s-right{
+    width:80%;
+    display: flex;
+}
+.sec .s-right .sr-item{
+    padding-left: 15px;
+    display: block;
+    flex: 1;
+}
+.sec .s-right .sr-item a img{
+    width: 100%;
+    display: block;
+}
